@@ -10,5 +10,6 @@ function ws_theme_styles() {
 }
 
 function ws_after_setup() {
-	add_theme_support('title-tag');
+	add_theme_support('menus');
+	register_nav_menu('primary', __('Primary Menu', 'testefrontend'));
 }

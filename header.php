@@ -16,44 +16,21 @@
 
 		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
 		    <ul class="navbar-nav mr-auto">
-		      <li class="nav-item active">
-		        <a class="nav-link" href="#">Home</a>
-		      </li>
-		      <li class="nav-item">
-		        <a class="nav-link" href="#">Menu 2</a>
-		      </li>
-		      <li class="nav-item">
-		        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Menu 3</a>
-		      </li>
+		    	<?php 
+			    	if (has_nav_menu('primary')) {
+			    		wp_nav_menu(array('theme_location'=>'primary'));
+			    	} 
+		    	?>
 		    </ul>
 		    <form class="form-inline my-2 my-lg-0">
 		      <input class="form-control mr-sm-2" type="search" placeholder="Busca" aria-label="Search">
-		      <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/search.png" style="height:20px;width: auto;"></button>
+		      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+		      	<img src="<?php echo get_template_directory_uri(); ?>/assets/images/search.png" style="height:20px;width: auto;">
+		      </button>
 		    </form>
 		  </div>
 		</nav>
-		<!-- <div class="menutopo">
-			<div class="container">
-				<div class="row">
-					<div class="col-12 col-md-8">
-						<ul class="menu">
-							<li><img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo_am.png" alt=""></li>
-							<li>Home</li>
-							<li>Menu 2</li>
-							<li>Menu 3</li>
-						</ul>
-					</div>
-					<div class="col-12 col-md-4">
-						<span class="busca">
-							<form method="POST" id="form_topo">
-								<input type="text" name="busca" class="input_busca" placeholder="Buscar">
-								<button type="submit"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/search.png"></button>
-							</form>
-						</span>
-					</div>
-				</div>
-			</div>
-		</div> -->
+
 		<div class="banner">
 			<img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner.jpg">
 		</div>

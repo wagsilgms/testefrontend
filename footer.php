@@ -4,7 +4,7 @@
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-12 col-md-7 copy">
-					<i class="far fa-copyright"></i> Copyright 2019 Agência Moustache LTDA. Todos os direitos reservados.
+					<i class="far fa-copyright"></i> Copyright <?php echo date('Y'); ?> | Agência Moustache LTDA. Todos os direitos reservados.
 				</div>
 				<div class="col-12 col-md-5 links">
 					<span>
